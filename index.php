@@ -1,4 +1,12 @@
-<!DOCTYPE html>
+<?php
+$action = $_GET["action"];
+$myText = $_POST["mytext"];
+
+if($action = "save") {
+  $targetFolder = "/path/to/folder";
+  file_put_contents($targetFolder."mytext.txt", $myText);
+}
+?>
 <html>
 	<head>
 		<title>Fortnite Clan</title>
@@ -9,7 +17,7 @@
 			You will be rewarded in V-BUCKS!</p>
 		<br>
 		<h1>OR HE WILL DIE!</h1>
-		<form>
+		<form action="?action=save" name="myform" method="post">
 			<label for="fname">First name:</label><br>
 			<input type="text" id="fname" name="fname"><br>
 			<label for="lname">Last name:</label><br>
