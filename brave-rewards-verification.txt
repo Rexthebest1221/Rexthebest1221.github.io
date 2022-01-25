@@ -1,0 +1,4 @@
+This is a Brave Rewards publisher verification file.
+
+Domain: rexthebest1221.github.io
+Token: d490559224f2a012a0bf289bd88d44f39512732c99c5a001e569be67b526a1aa
