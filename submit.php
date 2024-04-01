@@ -5,9 +5,8 @@ require_once __DIR__ . '/vendor/autoload.php'; // Path to your vendor autoload
 $client = new Google_Client();
 $client->setApplicationName('Newsletter');
 $client->setScopes([Google_Service_Sheets::SPREADSHEETS]);
-$client->setAccessType('offline'); // Change to 'online' if your server can make HTTP requests
+$client->setAccessType('online'); // Change to 'online' if your server can make HTTP requests
 
-// Replace 'path/to/your/credentials.json' with the path to your credentials file
 $client->setAuthConfig('extras/credentials.json');
 
 $service = new Google_Service_Sheets($client);
