@@ -43,28 +43,28 @@ article {
 }
 
 .thumbnail {
-    flex: 0 0 auto; /* Do not grow or shrink */
+    flex: 0 0 auto; 
     margin-right: 20px;
 }
 
 .thumbnail a {
-    display: block; /* Make anchor element a block-level element */
+    display: block; 
 }
 
 .thumbnail img {
     width: 200px;
     height: 150px;
-    border-radius: 8px; /* Rounded corners */
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.7); /* Drop shadow */
-    transition: transform 0.3s ease; /* Smooth hover effect */
+    border-radius: 8px; 
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.7); 
+    transition: transform 0.3s ease; 
 }
 
 .thumbnail:hover img {
-    transform: scale(1.1); /* Zoom in on hover */
+    transform: scale(1.1);
 }
 
 .article-info {
-    flex: 1; /* Take remaining space */
+    flex: 1; 
 }
 
 .article-info h2 {
@@ -72,7 +72,7 @@ article {
 }
 
 .article-info p.description {
-    margin-top: 5px; /* Add margin between thumbnail and text */
+    margin-top: 5px; 
 }
 
 .article-info a {
